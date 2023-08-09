@@ -1,0 +1,81 @@
+   Java methods
+                                                  Assignment solutions
+
+Q1 - Write a Java method to compute the average of three numbers
+Input1:25
+45
+65
+
+Output1:45
+Code:
+import java.io.*;
+import java.util.*;
+public class Main{
+public static int  average(int a,int b,int c){
+int ans=(a+b+c)/3;
+return ans;
+}
+public static void main(String[]args){
+System.out.println(“enter three numbers”);
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+int c=sc.nextInt();
+System.out.println(“average is :”+average(a,b,c));
+}
+}
+
+Q2 - Write a Java method to count all vowels in a string
+Input1:coding
+Output1:2
+Code:
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+public class Main{
+public static int count(String s){
+int count=0;
+for(int i=0;i<s.length();i++){
+char c=s.charAt(i);
+if(c=='a'|c=='i'||c=='e'||c=='o'||c=='u'){
+count++;
+}
+}
+return count;
+}
+public static void main(String[]args){
+System.out.println(“enter string”);
+Scanner sc=new Scanner(System.in);
+String s=sc.nextLine();
+System.out.println(count(s));
+}
+}
+
+Q3 - Write a Java method to display the middle character of a string.(Easy)
+Note: a) If the length of the string is even there will be two middle characters.
+b) If the length of the string is odd there will be one middle character.
+Input1:350
+Output1:5
+Import java.io.*;
+Import java,util.*;
+Import java.lang.*;
+Public class Middle{
+Public static String middle(String s){
+if(s.length()%2==0){
+Int i=s.length()/2;
+Char c=s.charAt(i);
+Return c;
+}
+Else{
+Int i=s.length()/2;
+Char c=s.charAt(i)+s.charAt(i+1);
+Return c;
+}
+}
+Public static void main(String[]args){
+System.out.println(“enter string”);
+Scanner sc=new Scanner(System.in);
+String s=nextLine();
+System.out.println(middle(s));
+}
+}

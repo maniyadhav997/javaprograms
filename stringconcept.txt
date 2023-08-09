@@ -1,0 +1,14 @@
+disadvantages of string class is objects are immutable->can not modify on same location
+if we wanmt add modiffy obj we need create another obj
+2.memory wasted
+**
+string buffer class are mutable
+
+methods in string class
+->length -str.length()- lentght of string
+index os -in-indexof(str)-first index
+charat-str.charAt(index)-character at given index
+replace - str.replace(old,new)-replace old with new
+to lower-str.toLowerCase()
+str.toUpperCase()
+comprated-str.comapreTo(str2)-
